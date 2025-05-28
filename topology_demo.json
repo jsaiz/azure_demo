@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    { "id": "mythical-requester", "title": "mythical-requester-pod" },
+    { "id": "mythical-recorder", "title": "mythical-recorder-pod" },
+    { "id": "mythical-server", "title": "mythical-server-pod" },
+    { "id": "mythical-queue", "title": "mythical-queue-pod" },
+    { "id": "pg-acyc-vm", "title": "pg-acyc-vm" }
+  ],
+  "edges": [
+    { "source": "mythical-requester", "target": "mythical-recorder", "mainStat": "mythical-recorder" },
+    { "source": "mythical-requester", "target": "mythical-server", "mainStat": "mythical-server" },
+    { "source": "mythical-requester", "target": "mythical-queue-pod", "mainStat": "rabbitmq" },
+    { "source": "mythical-server", "target": "pg-acyc-vm", "mainStat": "postgres" }
+  ]
+}
