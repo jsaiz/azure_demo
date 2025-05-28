@@ -7,9 +7,9 @@
     { "id": "pg-acyc-vm", "title": "pg-acyc-vm" }
   ],
   "edges": [
-    { "source": "mythical-requester", "target": "mythical-recorder", "mainStat": "mythical-recorder" },
-    { "source": "mythical-requester", "target": "mythical-server", "mainStat": "mythical-server" },
-    { "source": "mythical-requester", "target": "mythical-queue-pod", "mainStat": "rabbitmq" },
-    { "source": "mythical-server", "target": "pg-acyc-vm", "mainStat": "postgres" }
+    { "id": "edge1", "source": "mythical-requester", "target": "mythical-recorder", "mainStat": "mythical-recorder" },
+    { "id": "edge2", "source": "mythical-requester", "target": "mythical-server", "mainStat": "mythical-server" },
+    { "id": "edge3", "source": "mythical-requester", "target": "mythical-queue-pod", "mainStat": "rabbitmq" },
+    { "id": "edge4", "source": "mythical-server", "target": "pg-acyc-vm", "mainStat": "postgres" }
   ]
 }
