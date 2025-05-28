@@ -1,15 +1,15 @@
 {
   "nodes": [
-    { "id": "mythical-requester", "title": "mythical-requester-pod" },
-    { "id": "mythical-recorder", "title": "mythical-recorder-pod" },
-    { "id": "mythical-server", "title": "mythical-server-pod" },
-    { "id": "mythical-queue", "title": "mythical-queue-pod" },
-    { "id": "pg-acyc-vm", "title": "pg-acyc-vm" }
+    { "id": "mythical-requester", "title": "mythical-requester-pod", "color": "blue" },
+    { "id": "mythical-recorder", "title": "mythical-recorder-pod", "color": "blue" },
+    { "id": "mythical-server", "title": "mythical-server-pod", "color": "blue" },
+    { "id": "mythical-queue", "title": "mythical-queue-pod", "color": "blue" },
+    { "id": "pg-acyc-vm", "title": "pg-acyc-vm", "color": "blue" }
   ],
   "edges": [
-    { "id": "edge1", "source": "mythical-requester", "target": "mythical-recorder", "mainStat": "mythical-recorder" },
-    { "id": "edge2", "source": "mythical-requester", "target": "mythical-server", "mainStat": "mythical-server" },
-    { "id": "edge3", "source": "mythical-requester", "target": "mythical-queue-pod", "mainStat": "rabbitmq" },
-    { "id": "edge4", "source": "mythical-server", "target": "pg-acyc-vm", "mainStat": "postgres" }
+    { "id": "edge1", "source": "mythical-requester", "target": "mythical-recorder", "mainStat": "mythical-recorder", "color": "purple" },
+    { "id": "edge2", "source": "mythical-requester", "target": "mythical-server", "mainStat": "mythical-server", "color": "purple" },
+    { "id": "edge3", "source": "mythical-requester", "target": "mythical-queue-pod", "mainStat": "rabbitmq", "color": "purple" },
+    { "id": "edge4", "source": "mythical-server", "target": "pg-acyc-vm", "mainStat": "postgres", "color": "purple" }
   ]
 }
