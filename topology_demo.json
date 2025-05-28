@@ -1,10 +1,10 @@
 {
   "nodes": [
-    { "id": "mythical-requester", "title": "mythical-requester-pod", "color": "blue" },
-    { "id": "mythical-recorder", "title": "mythical-recorder-pod", "color": "blue" },
-    { "id": "mythical-server", "title": "mythical-server-pod", "color": "blue" },
-    { "id": "mythical-queue", "title": "mythical-queue-pod", "color": "blue" },
-    { "id": "pg-acyc-vm", "title": "pg-acyc-vm", "color": "blue" }
+    { "id": "mythical-requester", "title": "mythical-requester-pod", "color": "blue", "minStat": 1 },
+    { "id": "mythical-recorder", "title": "mythical-recorder-pod", "color": "blue", "minStat": 1 },
+    { "id": "mythical-server", "title": "mythical-server-pod", "color": "blue", "minStat": 1 },
+    { "id": "mythical-queue", "title": "mythical-queue-pod", "color": "blue", "minStat": 1 },
+    { "id": "pg-acyc-vm", "title": "pg-acyc-vm", "color": "blue", "minStat": 1 }
   ],
   "edges": [
     { "id": "edge1", "source": "mythical-requester", "target": "mythical-recorder", "mainStat": "mythical-recorder", "color": "purple" },
