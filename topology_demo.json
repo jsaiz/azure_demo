@@ -3,7 +3,7 @@
     { "id": "mythical-requester", "title": "Pod name: mythical-requester-pod", "color": "blue", "minStat": 1 },
     { "id": "mythical-recorder", "title": "Pod name: mythical-recorder-pod", "color": "blue", "minStat": 1 },
     { "id": "mythical-server", "title": "Pod name: mythical-server-pod", "color": "blue", "minStat": 1 },
-    { "id": "pg-acyc-vm", "title": "Host name: pg-acyc-vm", "color": "blue", "minStat": 1, "arc__links": [ { "title": "DB Name: postgres", "url": "http://localhost:3000/d/000000039/postgresql-database?orgId=1&refresh=10s&var-DS_PROMETHEUS=mimir&var-interval=%24__auto_interval_interval&var-namespace=&var-release=&var-instance=postgres-exporter.mimir%3A9187&var-datname=postgres&var-mode=All&from=1748840297928&to=1748861897928" } ] }
+    { "id": "pg-acyc-vm", "title": "Host name: pg-acyc-vm", "color": "blue", "minStat": 1, "arc__links": [ { "title": "DB Name: postgres", "url": "/d/000000039/postgresql-database?orgId=1&refresh=10s&var-DS_PROMETHEUS=mimir&var-interval=%24__auto_interval_interval&var-namespace=&var-release=&var-instance=postgres-exporter.mimir%3A9187&var-datname=postgres" } ] }
       ] }
   ],
   "edges": [
