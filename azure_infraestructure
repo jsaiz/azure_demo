@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    { "id": "Pod name: mythical-requester-pod", "title": "Pod name: mythical-requester-pod", "color": "blue", "mainStat": 1 },
+    { "id": "Pod name: mythical-recorder-pod", "title": "Pod name: mythical-recorder-pod", "color": "blue", "mainStat": 1 },
+    { "id": "Pod name: mythical-server-pod", "title": "Pod name: mythical-server-pod", "color": "blue", "mainStat": 1 },
+    { "id": "Host name: pg-acyc-vm", "title": "Host name: pg-acyc-vm", "color": "blue", "mainStat": 1, "arc__links": [ { "title": "Abrir dashboard de PostgreSQL", "url": "/goto/bG-FC_BHR?orgId=1" } ] }
+  ],
+  "edges": [
+    { "id": "edge1", "source": "Pod name: mythical-requester-pod", "target": "Pod name: mythical-recorder-pod", "mainStat": "Service name: mythical-recorder", "color": "purple" },
+    { "id": "edge2", "source": "Pod name: mythical-requester-pod", "target": "Pod name: mythical-server-pod", "mainStat": "Service name: mythical-server", "color": "purple" },
+    { "id": "edge4", "source": "Pod name: mythical-server-pod", "target": "Host name: pg-acyc-vm", "mainStat": "DB name: postgres", "color": "purple" }
+  ]
+}
