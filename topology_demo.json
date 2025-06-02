@@ -3,7 +3,7 @@
     { "id": "mythical-requester", "title": "Pod name: mythical-requester-pod", "color": "blue", "minStat": 1 },
     { "id": "mythical-recorder", "title": "Pod name: mythical-recorder-pod", "color": "blue", "minStat": 1 },
     { "id": "mythical-server", "title": "Pod name: mythical-server-pod", "color": "blue", "minStat": 1 },
-    { "id": "pg-acyc-vm", "title": "Host name: pg-acyc-vm", "color": "blue", "minStat": 1, "arc__links": [ { "title": "DB Name: postgres", "url": "http://localhost:3000/goto/bG-FC_BHR?orgId=1" } ] }  
+    { "id": "pg-acyc-vm", "title": "Host name: pg-acyc-vm", "color": "blue", "minStat": 1, "arc__links": [ { "title": "DB Name: postgres", "url": "/goto/bG-FC_BHR?orgId=1" } ] }  
   ],
   "edges": [
     { "id": "edge1", "source": "mythical-requester", "target": "mythical-recorder", "mainStat": "Service name: mythical-recorder", "color": "purple" },
