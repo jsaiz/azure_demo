@@ -1,13 +1,13 @@
 {
   "nodes": [
-    { "id": "mythical-requester", "title": "Pod name: mythical-requester-pod", "color": "blue", "minStat": 1 },
-    { "id": "mythical-recorder", "title": "Pod name: mythical-recorder-pod", "color": "blue", "minStat": 1 },
-    { "id": "mythical-server", "title": "Pod name: mythical-server-pod", "color": "blue", "minStat": 1 },
-    { "id": "pg-acyc-vm", "title": "Host name: pg-acyc-vm", "color": "blue", "minStat": 1, "arc__links": [ { "title": "DB Name: postgres", "url": "/goto/bG-FC_BHR?orgId=1" } ] }  
+    { "id": "Pod name: mythical-requester-pod", "title": "Pod name: mythical-requester-pod", "color": "blue", "minStat": 1 },
+    { "id": "Pod name: mythical-recorder-pod", "title": "Pod name: mythical-recorder-pod", "color": "blue", "minStat": 1 },
+    { "id": "Pod name: mythical-server-pod", "title": "Pod name: mythical-server-pod", "color": "blue", "minStat": 1 },
+    { "id": "Host name: pg-acyc-vm", "title": "Host name: pg-acyc-vm", "color": "blue", "minStat": 1, "arc__links": [ { "title": "Host name: pg-acyc-vm", "url": "/goto/bG-FC_BHR?orgId=1" } ] }  
   ],
   "edges": [
-    { "id": "edge1", "source": "mythical-requester", "target": "mythical-recorder", "mainStat": "Service name: mythical-recorder", "color": "purple" },
-    { "id": "edge2", "source": "mythical-requester", "target": "mythical-server", "mainStat": "Service name: mythical-server", "color": "purple" },
-    { "id": "edge4", "source": "mythical-server", "target": "pg-acyc-vm", "mainStat": "DB name: postgres", "color": "purple" }
+    { "id": "edge1", "source": "Pod name: mythical-requester-pod", "target": "Pod name: mythical-recorder-pod", "mainStat": "Service name: mythical-recorder", "color": "purple" },
+    { "id": "edge2", "source": "Pod name: mythical-requester-pod", "target": "Pod name: mythical-server-pod", "mainStat": "Service name: mythical-server", "color": "purple" },
+    { "id": "edge4", "source": "Pod name: mythical-server-pod", "target": "Host name: pg-acyc-vm", "mainStat": "DB name: postgres", "color": "purple" }
   ]
 }
