@@ -3,13 +3,11 @@
     { "id": "mythical-requester", "title": "mythical-requester-pod", "color": "blue", "minStat": 1 },
     { "id": "mythical-recorder", "title": "mythical-recorder-pod", "color": "blue", "minStat": 1 },
     { "id": "mythical-server", "title": "mythical-server-pod", "color": "blue", "minStat": 1 },
-    { "id": "mythical-queue", "title": "mythical-queue-pod", "color": "blue", "minStat": 1 },
     { "id": "pg-acyc-vm", "title": "pg-acyc-vm", "color": "blue", "minStat": 1 }
   ],
   "edges": [
     { "id": "edge1", "source": "mythical-requester", "target": "mythical-recorder", "mainStat": "mythical-recorder", "color": "purple" },
     { "id": "edge2", "source": "mythical-requester", "target": "mythical-server", "mainStat": "mythical-server", "color": "purple" },
-    { "id": "edge3", "source": "mythical-requester", "target": "mythical-queue-pod", "mainStat": "rabbitmq", "color": "purple" },
     { "id": "edge4", "source": "mythical-server", "target": "pg-acyc-vm", "mainStat": "postgres", "color": "purple" }
   ]
 }
